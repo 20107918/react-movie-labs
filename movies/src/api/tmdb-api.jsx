@@ -38,7 +38,6 @@ export const getMovie = id => {
    });
   };
 
-
 export const getMovieImages = (id) => {
   return fetch(
     `https://api.themoviedb.org/3/movie/${id}/images?api_key=${import.meta.env.VITE_TMDB_KEY}`
