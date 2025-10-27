@@ -7,6 +7,7 @@ import Typography from "@mui/material/Typography";
 
 const Header = (props ) => {
   const title = props.title
+
   return (
     <Paper 
       component="div" 

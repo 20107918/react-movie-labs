@@ -19,10 +19,10 @@ const HomePage = (props) => {
             return genreId > 0 ? m.genre_ids.includes(genreId) : true;
         });
 
-    const handleChange = (e, type, value) => {
-        e.preventDefault()
-        props.onUserInput(type, value)   // NEW
-    }
+    const handleChange = (type, value) => {
+        if (type === "name") setNameFilter(value);
+        else setGenreFilter(value);
+    };
 
     useEffect(() => {
         fetch(
