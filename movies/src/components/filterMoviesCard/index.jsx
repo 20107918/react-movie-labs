@@ -28,7 +28,7 @@ export default function FilterMoviesCard(props) {
     )
         .then(res => res.json())
         .then(json => {
-            // console.log(json.genres) 
+            console.log(json.genres) 
             return json.genres
         })
         .then(apiGenres => {
